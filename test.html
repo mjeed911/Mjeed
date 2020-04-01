@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>فعاليات حلوة جذابة</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+	  body{
+		  background-image: url("textured-background-2861351_1280.jpg");
+		  height: 100%;
+	  }
+  .container {
+	width: 250px;
+	height: 430px;
+	
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
+	background-color: rgb(255, 255, 255);
+  }
+  div {
+	
+  border-radius: 20px;
+  
+  padding: 20px;
+  
+	top:50px;
+  
+  }
+  p.double {border-style: double;}
+  </style>
+</head>
+<body onload="GFG_Fun()" >
+
+	
+<div class="container text-center">
+  <h3 style="font-weight: bold; font-size: 30px; color: black; "> دوك هالفعالية يا <p id="result"></p></h3>
+ <p style = 
+ "font-size: 24px; font-weight: bold; color: black; text-align: center;" > سوها وانت في البيت مب ناقصينك ترى
+  اذا سويت الفعالية وثقها في هاشتاق
+  <P style="font-size: 24px; font-weight: bold; color: blue; text-align: center;">#فعاليات_مجيد</P>
+  او تقدر ترسلها لربعك وتخليهم يشاركون بعد
+</p>
+
+
+	<p class="double" id = "GFG_DOWN" style = 
+  "font-size: 24px; font-weight: bold; color: black; text-align: center;"> 
+</p> 
+
+<div class="input-group">
+  <span class="input-group-addon">URL</span>
+  <input id="msg" type="text" class="form-control" name="msg" value="https://google.com">
+</div>
+
+		
+	</div>
+ 
+
+
+</div>
+
+
+</body>
+<script> 
+    var up = document.getElementById('GFG_UP'); 
+    var down = document.getElementById('GFG_DOWN'); 
+    
+    var arr = [
+      "زين لنا حلا في 10 دقايق",
+     "عطنا بيتين من اي قصيدة", 
+      "شاركنا اخر صورة في الالبوم",
+      "قول موقف محرج حصل لك",
+      "قلنا قصة من طفولتك"
+      ]; 
+    
+  
+    
+    function random(mn, mx) { 
+        return Math.random() * (mx - mn) + mn; 
+    } 
+    
+    function GFG_Fun() { 
+        down.innerHTML = arr[Math.floor(random(1, 5))-1]; 
+    } 
+
+    document.getElementById("result").innerHTML= localStorage.getItem("textvalue");
+</script> 
+</html>
